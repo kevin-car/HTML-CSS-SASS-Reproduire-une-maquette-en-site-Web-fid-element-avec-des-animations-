@@ -2,12 +2,26 @@
 @import "variables";
 @import "vue.desktop";
 @import "vue.tablette";
-
+@import "accueil";
+@import "restaurants";
+@font-face{
+    font-family: "policeRoboto";
+    src: url("Polices/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "policeShrihand";
+    src: url("Polices/shrikhand/Shrikhand-Regular.otf");
+}
 
 // Paramètres généraux
 
 *{
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 // organisation pour tout le site 
@@ -18,79 +32,26 @@ body{
 }
 
 #site{
-    width: 375px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     overflow-x: none;
 }
 
-// BLOC LOGO de OhMyFOOD
+// POLICES 
 
-#logo{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    img{
-        width: 60%;
-    }
+p{
+    font-family: "policeRoboto";
+    font-weight: 0;
 }
 
-// BLOC LOCALISATION
-
-.gps{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $gris_fonce; // a modifier avec la vraie couleur en variable !!!  
-    border-top: black 3px solid;
-}
-
-// ACCUEIL
-
-.accueil{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: $gris_clair ; // A modifier avec la vraie couleur en variable !!!
-    padding-bottom: 30px;
-    padding-top: 30px;
-    h1{
-        text-align: center;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 120px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    p{
-        text-align: center;
-        margin-left: 20px;
-        margin-right: 20px;
-        height: 80px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    &__cadre-bouton{
-        height: 120px;
-        margin-top: 0;
-        margin-bottom: 5px;
-        margin-top: 20px;
-        &--bouton{
-            background-color: pink;
-            color: white;
-            border-radius: 20px;
-            width: 180px;
-            height: 40px;
-        }
-    }
-    
+H1{
+    font-family: "policeShrikhand";
 
 }
+
+
 
 
 

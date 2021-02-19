@@ -1,20 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-#site {
-  width: 375px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  overflow-x: none;
-}
-
 #logo {
   display: flex;
   justify-content: center;
@@ -23,7 +6,13 @@ body {
 }
 #logo img {
   width: 60%;
-} 
+}
+
+.bordureHaute {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(#d2d2d2, #a7adbf);
+}
 
 .gps {
   display: flex;
@@ -31,7 +20,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #a7adbf;
-  border-top: black 3px solid;
 }
 
 .accueil {
@@ -46,11 +34,12 @@ body {
 }
 .accueil h1 {
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
   height: 120px;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 10px;
 }
 .accueil p {
   text-align: center;
@@ -67,11 +56,193 @@ body {
   margin-top: 20px;
 }
 .accueil__cadre-bouton--bouton {
-  background-color: pink;
+  background: linear-gradient(#eb73da, #a35bdc);
   color: white;
   border-radius: 20px;
   width: 180px;
   height: 40px;
+  border-style: none;
+  box-shadow: 0px 5px 5px #a7adbf;
+}
+
+.fonctionnement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 80px;
+}
+.fonctionnement__cadre {
+  background-color: #e2e3e7;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 5px #a7adbf;
+}
+.fonctionnement__cadre i {
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+.fonctionnement__cadre p {
+  position: absolute;
+  border-radius: 100px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 40px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  left: -10px;
+  margin: 0;
+}
+
+.titreRestaurant {
+  background-color: #e2e3e7;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  padding-left: 5%;
+  margin-top: 50px;
+}
+
+.blocRestaurants {
+  background-color: #e2e3e7;
+}
+
+.blocRestaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e3e7;
+  padding-bottom: 50px;
+}
+.blocRestaurants__vignetteRestaurant {
+  height: 270px;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.blocRestaurants__vignetteRestaurant__blocPhoto {
+  height: 200px;
+  margin: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+.blocRestaurants__vignetteRestaurant__blocPhoto--photo {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+}
+.blocRestaurants__vignetteRestaurant__blocTitre {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+.blocRestaurants__vignetteRestaurant__blocTitre--titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90%;
+}
+.blocRestaurants__vignetteRestaurant__blocTitre--titre h3, .blocRestaurants__vignetteRestaurant__blocTitre--titre p {
+  margin: 0;
+}
+.blocRestaurants__vignetteRestaurant__blocTitre--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blocRestaurants__vignetteRestaurant--blocNouveau {
+  position: absolute;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  top: 5%;
+  right: 5%;
+  background-color: #99e2d0;
+}
+.blocRestaurants__vignetteRestaurant--blocNouveau p {
+  margin: 0;
+  color: #199677;
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: #ddd9d9;
+  padding-left: 5%;
+  padding-top: 30px;
+  height: 200px;
+  filter: invert(100%);
+}
+.footer__logo img {
+  height: 25px;
+}
+.footer__blocLiens {
+  height: 150px;
+}
+.footer__blocLiens--lien {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25px;
+}
+.footer__blocLiens--lien i {
+  width: 30px;
+}
+
+@font-face {
+  font-family: "policeRoboto";
+  src: url("Polices/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "policeShrihand";
+  src: url("Polices/shrikhand/Shrikhand-Regular.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: none;
+}
+
+p {
+  font-family: "policeRoboto";
+  font-weight: 0;
+}
+
+H1 {
+  font-family: "policeShrikhand";
 }
 
 /*# sourceMappingURL=style.css.map */
