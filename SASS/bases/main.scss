@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "policeRoboto";
+    src: url("../Public/Polices/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "policeShrihand";
+    src: url("../Public/Polices/shrikhand/Shrikhand-Regular.otf");
+}
+
+@font-face{
+    font-family: "policeRobotoBoldItalic";
+    src: url("../Public/Polices/roboto/RobotoCondensed-BoldItalic.ttf");
+}
+
+
+// Paramètres généraux
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+// organisation pour tout le site 
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.site{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: none;
+}
+
+h2{
+    font-family: "policeShrihand";
+    font-weight: 900;
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 21px;
+    opacity: 0.60;
+    margin-top: 0;
+    margin-bottom:0;
+}

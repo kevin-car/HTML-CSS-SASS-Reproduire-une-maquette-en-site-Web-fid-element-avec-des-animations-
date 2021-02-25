@@ -1,0 +1,47 @@
+// Bouton fond violet avec police en blanche 
+@mixin boutonViolet {
+    height: 120px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    &--bouton{
+        background: linear-gradient(#eb73da, #a35bdc) ;
+        color: white;
+        border-radius: 20px;
+        width: 180px;
+        height: 40px;
+        border-style: none;
+        box-shadow: 0px 5px 5px $gris_fonce ;
+    }
+}
+
+@mixin boutonCommander{
+        height: 200px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin-top: 60px;
+        &__cadreBouton{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            &--bouton{
+                background: linear-gradient(#eb73da, #a35bdc) ;
+                color: white;
+                border-radius: 50px;
+                height: 40px;
+                border-style: none;
+                box-shadow: 0px 5px 5px $gris_fonce ;
+                width: 60%;
+                font-size: 20px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+
+
+    }

@@ -1,0 +1,106 @@
+.photoRestaurant img{
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.blocCarte{
+    height: auto;
+    width: 100%;
+    background-color: $gris-clair;
+    margin-top: -90px ;
+    border-radius: 50px 50px 0px 0px;
+    &__titreRestau{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;    
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        &--intitule{
+            width:80%;
+        }
+        &--logoFavoris {
+            width: 20%;
+            height: 40px;
+            i{
+                display: flex;
+                justify-content: center;
+                height: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.blocMenu{
+    &__blocTitre{
+        margin-left: 5%;
+        width: max-content;
+        margin-top: 40px;
+        &--bordureBasse{
+            background-color: aqua;
+            height: 3px;
+            width: calc(100% - 25%);
+            block-size: 50% content-box;
+            background-color: rgb(63, 164, 211);
+            margin-top: 2px;
+        }
+    }
+    &__blocPlat{
+        height: 70px;
+        margin-left: 5% ;
+        margin-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        background-color: white;
+        &--plat{
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            h3{
+                font-size: 25px;
+            }
+
+        }
+        &--prix{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width:100%;
+            p{
+                font-weight: bold;
+                opacity: 0.60;
+                font-size: 20px;
+                white-space: nowrap;
+                width: 70%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            h3{
+                font-size: 20px;
+
+            }
+        }
+        h3, p{
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+}
+.commander{
+    @include boutonCommander;
+}
+    
+
+

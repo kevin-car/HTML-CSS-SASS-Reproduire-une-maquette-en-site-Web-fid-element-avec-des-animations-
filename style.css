@@ -1,3 +1,54 @@
+@font-face {
+  font-family: "policeRoboto";
+  src: url("../Public/Polices/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "policeShrihand";
+  src: url("../Public/Polices/shrikhand/Shrikhand-Regular.otf");
+}
+@font-face {
+  font-family: "policeRobotoBoldItalic";
+  src: url("../Public/Polices/roboto/RobotoCondensed-BoldItalic.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: none;
+}
+
+h2 {
+  font-family: "policeShrihand";
+  font-weight: 900;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 21px;
+  opacity: 0.6;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 #logo {
   display: flex;
   justify-content: center;
@@ -206,43 +257,129 @@
   width: 30px;
 }
 
-@font-face {
-  font-family: "policeRoboto";
-  src: url("Polices/roboto/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "policeShrihand";
-  src: url("Polices/shrikhand/Shrikhand-Regular.otf");
-}
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-#site {
+.photoRestaurant img {
+  height: 380px;
   width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.blocCarte {
+  height: auto;
+  width: 100%;
+  background-color: #e2e3e7;
+  margin-top: -90px;
+  border-radius: 50px 50px 0px 0px;
+}
+.blocCarte__titreRestau {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+}
+.blocCarte__titreRestau--intitule {
+  width: 80%;
+}
+.blocCarte__titreRestau--logoFavoris {
+  width: 20%;
+  height: 40px;
+}
+.blocCarte__titreRestau--logoFavoris i {
   display: flex;
   justify-content: center;
+  height: 20px;
+  width: 100%;
+}
+
+.blocMenu__blocTitre {
+  margin-left: 5%;
+  width: max-content;
+  margin-top: 40px;
+}
+.blocMenu__blocTitre--bordureBasse {
+  background-color: aqua;
+  height: 3px;
+  width: calc(100% - 25%);
+  block-size: 50% content-box;
+  background-color: #3fa4d3;
+  margin-top: 2px;
+}
+.blocMenu__blocPlat {
+  height: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 15px;
+  display: flex;
   flex-direction: column;
-  overflow-x: none;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: white;
+}
+.blocMenu__blocPlat--plat {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.blocMenu__blocPlat--plat h3 {
+  font-size: 25px;
+}
+.blocMenu__blocPlat--prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.blocMenu__blocPlat--prix p {
+  font-weight: bold;
+  opacity: 0.6;
+  font-size: 20px;
+  white-space: nowrap;
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.blocMenu__blocPlat--prix h3 {
+  font-size: 20px;
+}
+.blocMenu__blocPlat h3, .blocMenu__blocPlat p {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-p {
-  font-family: "policeRoboto";
-  font-weight: 0;
+.commander {
+  height: 200px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-top: 60px;
 }
-
-H1 {
-  font-family: "policeShrikhand";
+.commander__cadreBouton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.commander__cadreBouton--bouton {
+  background: linear-gradient(#eb73da, #a35bdc);
+  color: white;
+  border-radius: 50px;
+  height: 40px;
+  border-style: none;
+  box-shadow: 0px 5px 5px #a7adbf;
+  width: 60%;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

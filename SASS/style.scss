@@ -1,55 +1,33 @@
 // importation des autres fichiers SCSS
-@import "variables";
-@import "vue.desktop";
-@import "vue.tablette";
-@import "accueil";
-@import "restaurants";
-@font-face{
-    font-family: "policeRoboto";
-    src: url("Polices/roboto/Roboto-Regular.ttf");
-}
-@font-face {
-    font-family: "policeShrihand";
-    src: url("Polices/shrikhand/Shrikhand-Regular.otf");
-}
 
-// Paramètres généraux
+// base         PARAMETRES PRINCIPAUX
+@import "./bases/main";
 
-*{
-    box-sizing: border-box;
-}
+// utils        VARIABLES, FONCTIONS, MIXINS 
+@import "./utils/variables.scss";
 
-a{
-    text-decoration: none;
-    color: black;
-}
+// layout       HEADER, PIED DE PAGE
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-// organisation pour tout le site 
+// component    BOUTONS
+@import "./components/boutons.scss";
+@import "./components/blocCliquable.scss";
 
-body{
-    margin: 0;
-    padding: 0;
-}
+// pages        ELEMENTS SPECIFIQUE A UNE SEULE PAGE
+@import "./pages/accueil.scss";
+@import "./pages/4Restaurants.scss";
 
-#site{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow-x: none;
-}
+// themes       PAS UTILISE 
 
-// POLICES 
+// vendors      PAS UTILISE
 
-p{
-    font-family: "policeRoboto";
-    font-weight: 0;
-}
 
-H1{
-    font-family: "policeShrikhand";
 
-}
+
+
+
+
 
 
 
