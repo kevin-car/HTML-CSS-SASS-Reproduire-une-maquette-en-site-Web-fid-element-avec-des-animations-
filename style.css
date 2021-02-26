@@ -49,14 +49,19 @@ h5 {
   margin-bottom: 0;
 }
 
-#logo {
+.logo {
   display: flex;
   justify-content: center;
   padding-top: 10px;
   margin-bottom: 10px;
 }
-#logo img {
+.logo img {
   width: 60%;
+}
+.logo__boutonPrecedent {
+  position: absolute;
+  left: 10px;
+  top: 20px;
 }
 
 .bordureHaute {
@@ -258,7 +263,7 @@ h5 {
 }
 
 .photoRestaurant img {
-  height: 380px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   background-size: cover;
@@ -268,7 +273,7 @@ h5 {
   height: auto;
   width: 100%;
   background-color: #e2e3e7;
-  margin-top: -90px;
+  margin-top: -80px;
   border-radius: 50px 50px 0px 0px;
 }
 .blocCarte__titreRestau {

@@ -7,3 +7,9 @@
         width: 60%;
     }
 }
+
+@mixin boutonPrecedent {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}

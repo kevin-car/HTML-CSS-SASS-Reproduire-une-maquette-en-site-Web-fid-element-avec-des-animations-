@@ -1,7 +1,10 @@
 // BLOC LOGO de OhMyFOOD
 
-#logo{
+.logo{
     @include logo;
+    &__boutonPrecedent{
+        @include boutonPrecedent
+    }
 }
 
 // BLOC LOCALISATION
