@@ -331,7 +331,7 @@ h5 {
   width: 100%;
 }
 .blocMenu__blocPlat--plat h3 {
-  font-size: 25px;
+  font-size: 17px;
 }
 .blocMenu__blocPlat--prix {
   display: flex;
@@ -342,7 +342,7 @@ h5 {
 .blocMenu__blocPlat--prix p {
   font-weight: bold;
   opacity: 0.6;
-  font-size: 20px;
+  font-size: 15px;
   white-space: nowrap;
   width: 70%;
   text-overflow: ellipsis;
