@@ -6,6 +6,14 @@
 }
 
 .blocCarte{
+    height: max-content;
+    &__anim{
+        background-color: $gris-clair;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        position: absolute;
+   }
     height: auto;
     width: 100%;
     background-color: $gris-clair;
@@ -36,71 +44,124 @@
 }
 
 .blocMenu{
+
     &__blocTitre{
         margin-left: 5%;
         width: max-content;
         margin-top: 40px;
+        overflow: hidden;
         &--bordureBasse{
             background-color: aqua;
             height: 3px;
             width: calc(100% - 25%);
             block-size: 50% content-box;
-            background-color: rgb(63, 164, 211);
+            background-color: #99e2d0;
             margin-top: 2px;
         }
     }
     &__blocPlat{
+
+
+        &:hover{
+            .blocMenu__blocPlat--plat{
+                width: 80%;
+                background-color: brown;
+            }
+            .blocMenu__blocPlat--descriptif{
+                width: 65%;
+            }
+            .blocMenu__blocPlat--caseCoche{
+                width: 20%;
+                transform: translateX(0);
+            }
+        }
+
         height: 70px;
         margin-left: 5% ;
         margin-right: 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
         margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         border-radius: 20px;
         background-color: white;
-        &--plat{
-            display: flex;
-            align-items: flex-start;
-            width: 100%;
-            h3{
-                font-size: 17px;
+        box-shadow: 5px 5px 5px  $gris_fonce ;
+        // règles de positionnement
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+            &--plat{
+                width: 100%;
+                height: 35px;
+                background-color: brown;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: center;
             }
-
-        }
-        &--prix{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            width:100%;
-            p{
-                font-weight: bold;
-                opacity: 0.60;
-                font-size: 15px;
-                white-space: nowrap;
-                width: 70%;
-                text-overflow: ellipsis;
+            &--descriptif{
+                width: 85%;
+                height: 35px;
+                display: flex;
+                align-items: flex-start;
+                background-color: chartreuse;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
                 overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                p{
+                    font-size: 17px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
             }
-            h3{
-                font-size: 20px;
+            &--prix{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width:15%;
+                height: 35px;
+                align-items: flex-end;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: center;
+                background-color: cyan;
+                p{
+                    font-weight: bold;
+                    opacity: 0.60;
+                    font-size: 15px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
 
+            h3, p{
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
+            &--caseCoche{
+                background-color: #47635c;
+                width: 0%;
+                height: 100%;
+                transform: translatex(100px);
+                overflow: hidden;
+    
+                }
         }
-        h3, p{
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+
 
     }
-}
+
 .commander{
     @include boutonCommander;
 }
-    
 
 

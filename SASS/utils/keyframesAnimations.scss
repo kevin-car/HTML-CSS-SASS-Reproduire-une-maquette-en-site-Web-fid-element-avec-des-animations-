@@ -1,0 +1,158 @@
+$timeTransition: .2s;
+
+// plat 1
+.plat1{
+    transition: 1s;
+    animation: plat1 ease-in-out 1.1s;
+}
+
+@keyframes plat1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+// plat 2
+.plat2{
+    transition: 1s;
+    animation: plat2 ease-in-out 2s;
+}
+
+@keyframes plat2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+// plat 3
+
+.plat3{
+    transition: 1s;
+    animation: plat3 ease-in-out 3s;
+}
+
+@keyframes plat3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+// plat 4
+
+.plat4{
+    transition: 1s;
+    animation: plat4 ease-in-out 3.5s;
+}
+
+@keyframes plat4{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+// plat 5
+
+.plat5{
+    transition: 1s;
+    animation: plat5 ease-in-out 4.0s;
+}
+
+@keyframes plat5{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+// plat 6
+
+.plat6{
+    transition: $timeTransition;
+    animation: plat6 ease-in-out 4.3s;
+}
+
+@keyframes plat6{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+// plat 7
+
+.plat7{
+    transition: $timeTransition;
+    animation: plat7 ease-in-out 4.6s;
+}
+
+@keyframes plat7{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+// plat 8
+
+.plat8{
+    transition: $timeTransition;
+    animation: plat8 ease-in-out 4.8s;
+}
+
+@keyframes plat8{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+// plat 9
+
+.plat9{
+    transition: $timeTransition;
+    animation: plat9 ease-in-out 5s;
+}
+
+@keyframes plat9{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
