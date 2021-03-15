@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $gris_fonce; // a modifier avec la vraie couleur en variable !!!  
+    background-color: $gris_fonce;   
     }
 
 // ACCUEIL
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: $gris_clair ; // A modifier avec la vraie couleur en variable !!!
+    background-color: $gris_clair ; 
     padding-bottom: 30px;
     padding-top: 30px;
     h1{
@@ -78,16 +78,31 @@
 
 //                            RESTAURANTS ==> BLOC 
 
-.blocRestaurants{
-    background-color: $gris_clair;
-}
+
 
 
 // RESTAURANTS ==> Vignettes
 
 .blocRestaurants{
-    @include blocRestaurants;
+    @media (max-width: 599px){
+    background-color: $gris_clair;
+    flex-direction: column;
+    &__vignetteRestaurant{
+        &__blocTitre{
+            &--logo{
+                i{
+                    &:hover{
+                        color: aqua
+                    }
+                }
+
+            }
+        }
     }
+    }
+    @include blocRestaurants;
+
+}
 
 //              FOOTER 
 

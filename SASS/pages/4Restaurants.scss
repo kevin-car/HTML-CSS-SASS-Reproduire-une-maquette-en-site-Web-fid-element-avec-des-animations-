@@ -12,7 +12,6 @@
         width: 100%;
         z-index: 1;
         bottom: 0;
-        position: absolute;
    }
     height: auto;
     width: 100%;
@@ -61,21 +60,6 @@
     }
     &__blocPlat{
 
-
-        &:hover{
-            .blocMenu__blocPlat--plat{
-                width: 80%;
-                background-color: brown;
-            }
-            .blocMenu__blocPlat--descriptif{
-                width: 65%;
-            }
-            .blocMenu__blocPlat--caseCoche{
-                width: 20%;
-                transform: translateX(0);
-            }
-        }
-
         height: 70px;
         margin-left: 5% ;
         margin-right: 5%;
@@ -87,57 +71,41 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-            &--plat{
-                width: 100%;
-                height: 35px;
-                background-color: brown;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-content: center;
-            }
-            &--descriptif{
+
+        overflow: hidden;
+        &--plat{
                 width: 85%;
-                height: 35px;
-                display: flex;
-                align-items: flex-start;
-                background-color: chartreuse;
+                height: 100%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                p{
-                    font-size: 17px;
+
+                h3, p{
+                    width: 90%;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    overflow: hidden;
+                    overflow:hidden;
                 }
+
             }
             &--prix{
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
                 width:15%;
-                height: 35px;
-                align-items: flex-end;
-                justify-content: space-between;
+                height: 90%;
+
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
-                align-content: center;
-                background-color: cyan;
+                justify-content: flex-end;
+
                 p{
                     font-weight: bold;
                     opacity: 0.60;
-                    font-size: 15px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
+                    font-size: 10px;
                 }
                 h3{
-                    font-size: 20px;
+                    font-size: 15px;
                 }
             }
 
@@ -151,17 +119,13 @@
                 background-color: #47635c;
                 width: 0%;
                 height: 100%;
-                transform: translatex(100px);
-                overflow: hidden;
-    
+                transform: translatex(30px);
+                overflow: hidden
                 }
         }
-
-
     }
 
 .commander{
     @include boutonCommander;
 }
-
 

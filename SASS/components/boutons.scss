@@ -25,6 +25,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
             &--bouton{
                 background: linear-gradient(#eb73da, #a35bdc) ;
                 color: white;
@@ -40,6 +41,11 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                &:hover{
+                    cursor: pointer;
                 }
+                }
+
             }
+
         }

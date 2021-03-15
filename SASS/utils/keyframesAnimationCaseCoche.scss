@@ -1,0 +1,58 @@
+.blocMenu{
+    &__blocPlat{
+        &:hover{
+            .blocMenu__blocPlat--plat{
+                width: 70%;
+                overflow: hidden;
+            }
+            .blocMenu__blocPlat--caseCoche{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 15%;
+                transform: translate(0);
+                background-color: #99e2d0;
+                border-radius: 0px 20px 20px 0px;
+                animation: cocheQuiArrive 0.5s linear;
+                overflow: hidden;
+                i{
+                    color: #99e2d0;
+                    background-color: white;
+                    border-radius: 50%;
+                    border: none;
+                    overflow: hidden;
+                    animation: logoTourne 0.5s linear;
+                }                                                                        
+            }        
+        }
+    }
+}
+
+@keyframes cocheQuiArrive{
+    0%{
+        transform: translatex(100%);
+
+   }
+    50%{
+        transform:  translatex(50%);
+        
+    }
+    100%{
+        transform:  translatex(0);
+    }
+}
+
+@keyframes logoTourne{
+    0%{
+        transform: rotate(0turn);
+
+   }
+    50%{
+        transform:  rotate(0.5turn);
+        
+    }
+    100%{
+        transform:  rotate(1turn);
+    }
+}
