@@ -1,0 +1,23 @@
+@mixin coeurViolet {
+    .fas{
+        position: absolute;
+        opacity: 0%;    
+
+    }
+    .far{
+        position: absolute;
+        opacity: 100%;
+    }
+    &:hover{
+        .fas{
+            position: absolute;
+            opacity: 100%;   
+            color: #bd64db;
+ 
+        }
+        .far{
+            position: absolute;
+            opacity: 0%;
+        }
+}
+}

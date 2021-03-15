@@ -21,6 +21,7 @@ body {
 h1 {
   font-family: "Roboto", serif;
   font-size: 25px;
+  font-weight: 900;
 }
 
 h2 {
@@ -38,11 +39,6 @@ h5 {
   opacity: 0.6;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-p {
-  font-family: "Roboto", serif;
-  opacity: 50%;
 }
 
 @keyframes animationProgressive {
@@ -215,6 +211,25 @@ p {
   .site {
     margin: 0 20% 0 20%;
   }
+
+  .blocCarte__titreRestau {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blocMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blocMenu__blocPlat {
+    width: 80%;
+    max-width: 500px;
+  }
 }
 .blocMenu__blocPlat:hover .blocMenu__blocPlat--plat {
   width: 70%;
@@ -291,6 +306,9 @@ p {
   align-items: center;
   background-color: #a7adbf;
 }
+.gps p {
+  font-family: "Roboto", sans serif;
+}
 
 .accueil {
   height: 250px;
@@ -318,8 +336,10 @@ p {
   height: 80px;
   margin-top: 0;
   margin-bottom: 0;
-  opacity: 10%;
+  opacity: 50%;
+  font-weight: 500;
   color: black;
+  font-family: "Roboto";
 }
 .accueil__cadre-bouton {
   height: 120px;
@@ -390,14 +410,22 @@ p {
   align-items: center;
   padding-bottom: 50px;
 }
-@media (max-width: 599px) {
-  .blocRestaurants {
-    background-color: #e2e3e7;
-    flex-direction: column;
-  }
-  .blocRestaurants__vignetteRestaurant__blocTitre--logo i:hover {
-    color: aqua;
-  }
+.blocRestaurants .fas {
+  position: absolute;
+  opacity: 0%;
+}
+.blocRestaurants .far {
+  position: absolute;
+  opacity: 100%;
+}
+.blocRestaurants:hover .fas {
+  position: absolute;
+  opacity: 100%;
+  color: #bd64db;
+}
+.blocRestaurants:hover .far {
+  position: absolute;
+  opacity: 0%;
 }
 .blocRestaurants__vignetteRestaurant {
   height: 270px;
@@ -457,6 +485,12 @@ p {
   margin: 0;
   color: #199677;
   font-weight: bolder;
+}
+@media (max-width: 599px) {
+  .blocRestaurants {
+    background-color: #e2e3e7;
+    flex-direction: column;
+  }
 }
 
 .footer {
@@ -542,6 +576,7 @@ p {
   margin-top: 2px;
 }
 .blocMenu__blocPlat {
+  cursor: url("./Public/images/cursor/mac-cursor.cur"), zoom-in;
   height: 70px;
   margin-left: 5%;
   margin-right: 5%;

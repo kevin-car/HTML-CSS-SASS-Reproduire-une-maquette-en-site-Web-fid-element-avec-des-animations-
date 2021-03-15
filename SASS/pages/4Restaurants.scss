@@ -60,6 +60,8 @@
     }
     &__blocPlat{
 
+        cursor: url("./Public/images/cursor/mac-cursor.cur"), zoom-in;
+
         height: 70px;
         margin-left: 5% ;
         margin-right: 5%;
@@ -73,6 +75,8 @@
         flex-wrap: wrap;
 
         overflow: hidden;
+
+
         &--plat{
                 width: 85%;
                 height: 100%;

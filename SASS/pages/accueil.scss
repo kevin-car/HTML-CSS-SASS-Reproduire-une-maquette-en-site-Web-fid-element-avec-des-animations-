@@ -21,6 +21,9 @@
     justify-content: center;
     align-items: center;
     background-color: $gris_fonce;   
+    p{
+        font-family: "Roboto", sans serif;
+    }
     }
 
 // ACCUEIL
@@ -50,8 +53,10 @@
         height: 80px;
         margin-top: 0;
         margin-bottom: 0;
-        opacity: 10%;
-        color: black
+        opacity: 50%;
+        font-weight: 500;
+        color: black;
+        font-family: "Roboto"
     }
     &__cadre-bouton{
         @include boutonViolet;
@@ -84,26 +89,16 @@
 // RESTAURANTS ==> Vignettes
 
 .blocRestaurants{
-    @media (max-width: 599px){
-    background-color: $gris_clair;
-    flex-direction: column;
-    &__vignetteRestaurant{
-        &__blocTitre{
-            &--logo{
-                i{
-                    &:hover{
-                        color: aqua
-                    }
-                }
-
-            }
-        }
-    }
-    }
+    @include coeurViolet;
     @include blocRestaurants;
 
-}
+@media (max-width: 599px){
+    background-color: $gris_clair;
+    flex-direction: column;
 
+
+}
+}
 //              FOOTER 
 
 .footer{
