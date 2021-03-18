@@ -1,0 +1,106 @@
+// BLOC LOGO de OhMyFOOD
+
+.logo{
+    @include logo;
+    &__boutonPrecedent{
+        @include boutonPrecedent
+    }
+}
+
+// BLOC LOCALISATION
+
+.bordureHaute{
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(#d2d2d2, $gris_fonce);
+}
+
+.gps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $gris_fonce;   
+    p{
+        font-family: "Roboto", sans serif;
+    }
+    }
+
+// ACCUEIL
+
+.accueil{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $gris_clair ; 
+    padding-bottom: 30px;
+    padding-top: 30px;
+    h1{
+        text-align: center;
+        height: 120px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    p{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 80px;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: 50%;
+        font-weight: 500;
+        color: black;
+        font-family: "Roboto"
+    }
+    &__cadre-bouton{
+        @include boutonViolet;
+    }
+}
+
+
+// 3 Blocs Fonctionnement
+
+.fonctionnement{
+    @include blocsEtapes;
+    }
+
+// TITRE RESTAURANT 
+
+.titreRestaurant{
+    background-color: $gris_clair;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-left: 5%;
+    margin-top: 50px;
+}
+
+
+//                            RESTAURANTS ==> BLOC 
+
+
+
+
+// RESTAURANTS ==> Vignettes
+
+.blocRestaurants{
+    @include coeurViolet;
+    @include blocRestaurants;
+
+@media (max-width: 599px){
+    background-color: $gris_clair;
+    flex-direction: column;
+
+
+}
+}
+//              FOOTER 
+
+.footer{
+    @include footer;
+}

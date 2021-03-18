@@ -1,0 +1,30 @@
+// importation des autres fichiers SCSS
+
+// base         PARAMETRES PRINCIPAUX
+@import "./bases/main";
+
+// utils        VARIABLES, FONCTIONS, MIXINS 
+@import "./utils/variables.scss";
+@import "./utils/AnimationsArriveeDesPlats.scss";
+@import "./utils/responsiveAccueil.scss";
+@import "./utils/responsive4Restaurants.scss";
+@import "./utils/keyframesAnimationCaseCoche.scss";
+@import "./utils/effetCoeurViolet.scss";
+
+// layout       HEADER, PIED DE PAGE
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/loadingSpinner.scss";
+
+// component    BOUTONS
+@import "./components/boutons.scss";
+@import "./components/blocCliquable.scss";
+
+// pages        ELEMENTS SPECIFIQUE A UNE SEULE PAGE
+@import "./pages/accueil.scss";
+@import "./pages/4Restaurants.scss";
+
+// themes       PAS UTILISE 
+
+// vendors      PAS UTILISE
+

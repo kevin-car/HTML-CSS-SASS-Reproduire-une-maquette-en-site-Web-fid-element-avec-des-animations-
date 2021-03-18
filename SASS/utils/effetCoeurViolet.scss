@@ -1,0 +1,30 @@
+@mixin coeurViolet {
+
+    
+        .fas{
+            position: absolute;
+            z-index: 3;
+
+        }
+        .far{
+            position: absolute;
+            z-index: 1
+            ;
+        }
+
+
+        .coeurVide1{
+            &:hover{
+                    opacity: 0%;    
+                    color: red;
+                .coeurPlein1{
+                    opacity: 100%;
+                    color: blue;
+                }
+
+            }
+        }
+
+
+}
+

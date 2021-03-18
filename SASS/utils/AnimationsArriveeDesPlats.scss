@@ -1,0 +1,22 @@
+
+@keyframes animationProgressive{
+    0%{
+        opacity: 0;
+        transform: translateY(120%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);;
+    }
+}
+
+@for $i from 1 through 12{
+    .anim#{$i}{
+        opacity: 0;
+        animation: animationProgressive ease-in-out 0.7s both;
+        animation-delay: #{$i/5}s;
+        position: relative;
+    }
+}
+
+

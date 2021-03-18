@@ -1,0 +1,25 @@
+@mixin footer {
+    background-color: rgb(221, 217, 217);
+    padding-left: 5%;
+    padding-top: 30px;
+    height: 200px;
+    filter: invert(100%);
+    &__logo{
+        img{
+            height: 25px;
+        }
+    }
+    &__blocLiens{
+        height: 150px;
+        &--lien{
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 25px;
+            i{
+                width: 30px;
+            }
+        }
+    }
+}

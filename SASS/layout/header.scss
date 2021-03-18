@@ -1,0 +1,15 @@
+@mixin logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    img{
+        width: 60%;
+    }
+}
+
+@mixin boutonPrecedent {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
