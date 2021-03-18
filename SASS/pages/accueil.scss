@@ -56,7 +56,7 @@
         opacity: 50%;
         font-weight: 500;
         color: black;
-        font-family: "Roboto"
+        font-family: "Roboto", serif;
     }
     &__cadre-bouton{
         @include boutonViolet;
@@ -91,6 +91,12 @@
 .blocRestaurants{
     @include coeurViolet;
     @include blocRestaurants;
+
+.blocRestaurants__vignetteRestaurant__blocTitre--titre{
+    p{
+        font-family: "Roboto", sans-serif;
+    }
+}
 
 @media (max-width: 599px){
     background-color: $gris_clair;
