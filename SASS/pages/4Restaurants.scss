@@ -1,3 +1,11 @@
+.logo{
+    @include logo;
+    &__boutonPrecedent{
+        @include boutonPrecedent
+    }
+}
+
+
 // photo du haut 
 
 .photoRestaurant img{

@@ -10,7 +10,7 @@
     }
 }
 
-@for $i from 1 through 12{
+@for $i from 1 through 13{
     .anim#{$i}{
         opacity: 0;
         animation: animationProgressive ease-in-out 0.7s both;

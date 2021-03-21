@@ -136,6 +136,13 @@ h5 {
   position: relative;
 }
 
+.anim13 {
+  opacity: 0;
+  animation: animationProgressive ease-in-out 0.7s both;
+  animation-delay: 2.6s;
+  position: relative;
+}
+
 @media (min-width: 750px) {
   .site4Restaurant {
     width: 80%;
@@ -194,12 +201,6 @@ h5 {
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-
-  .logo {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
   }
 
   .bordureHaute {
@@ -294,12 +295,6 @@ h5 {
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-
-  .logo {
-    display: flex;
-    flex-direction: row;
-    width: 35%;
   }
 
   .bordureHaute {
@@ -506,12 +501,14 @@ h5 {
 }
 .logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .logo img {
-  width: 40%;
+  width: 200px;
 }
 .logo__boutonPrecedent {
   position: absolute;
@@ -747,6 +744,23 @@ h5 {
 }
 .footer__blocLiens--lien i {
   width: 30px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.logo img {
+  width: 200px;
+}
+.logo__boutonPrecedent {
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 
 .photoRestaurant img {
