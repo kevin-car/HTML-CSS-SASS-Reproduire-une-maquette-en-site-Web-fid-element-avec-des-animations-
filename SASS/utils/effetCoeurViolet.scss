@@ -1,30 +1,24 @@
 @mixin coeurViolet {
 
-    
-        .fas{
-            position: absolute;
-            z-index: 3;
 
+
+    }
+
+@keyframes coeur {
+    0% {
+        background: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0px;
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100% {
+        background: linear-gradient(0.47turn, #FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0px;
+        opacity: 1;
+        transform: scale(1);
         }
-        .far{
-            position: absolute;
-            z-index: 1
-            ;
-        }
-
-
-        .coeurVide1{
-            &:hover{
-                    opacity: 0%;    
-                    color: red;
-                .coeurPlein1{
-                    opacity: 100%;
-                    color: blue;
-                }
-
-            }
-        }
-
-
-}
-
+    }

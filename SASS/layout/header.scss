@@ -4,12 +4,12 @@
     padding-top: 10px;
     margin-bottom: 10px;
     img{
-        width: 60%;
+        width: 40%;
     }
 }
 
 @mixin boutonPrecedent {
     position: absolute;
-    left: 10px;
-    top: 20px;
+    left: 20px;
+    top: 15px;
 }

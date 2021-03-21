@@ -67,6 +67,12 @@
 // 3 Blocs Fonctionnement
 
 .fonctionnement{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
+
     @include blocsEtapes;
     }
 
@@ -85,12 +91,96 @@
 
 
 
-
 // RESTAURANTS ==> Vignettes
 
 .blocRestaurants{
-    @include coeurViolet;
-    @include blocRestaurants;
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    &__vignetteRestaurant{
+        height: 270px;
+        width: 90%;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &__blocPhoto{ 
+            height: 200px;
+            margin:0;
+            border-radius: 20px 20px 0px 0px;
+                &--photo{
+                width: 100%;
+                border-radius: 20px 20px 0px 0px;
+                background-size: cover;
+                object-fit: cover;
+                height: 200px
+                }   
+        }
+
+        &__blocTitre{
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+
+            &--titre{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 5%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 90%;
+                    h3, p{
+                        margin: 0;
+                    }
+                    p{
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 300;
+                    }
+                }
+            &--logo{
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;   
+                    align-content: center; 
+
+        
+                    font-size: 20px;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;
+                    color: transparent; 
+                        &:hover{
+                            animation: coeur 400ms linear both;
+                            -webkit-text-fill-color: transparent;
+                            -webkit-text-stroke-width: 0px;
+                        }       
+            }
+        }
+
+        &--blocNouveau{
+            position: absolute;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0;
+            top: 5%;
+            right: 5%;     
+            background-color:#99e2d0;
+                p{
+                    margin: 0;
+                    color:#199677;
+                    font-weight: bolder;
+                }
+    
+           }
+
+        }
+
 
 .blocRestaurants__vignetteRestaurant__blocTitre--titre{
     p{
@@ -98,7 +188,7 @@
     }
 }
 
-@media (max-width: 599px){
+@media (max-width: 750px){
     background-color: $gris_clair;
     flex-direction: column;
 
@@ -108,5 +198,7 @@
 //              FOOTER 
 
 .footer{
+    padding-left: 5%;
+
     @include footer;
 }

@@ -1,14 +1,33 @@
-@media (min-width: 600px){
+@media (min-width: 750px){
+
+    .site4Restaurant{
+        width: 80%;
+        padding-left: 20%;
+    }
 
 
     .blocCarte{
 
         &__titreRestau{
+
+
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-content: center;
+
+            &--intitule{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            &--logoFavoris{
+                display: none;
+
+            }
+
     }
     }
 
@@ -17,12 +36,42 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+
         &__blocPlat{
             width: 80%;
             max-width: 500px;
         }
     }
 
+    .footerRestaurant{
+        
+        
+
+        padding-left: 0 !important;
+        width:50% !important;
+        min-width: 200px;
+        margin-left: 25%;
+
+
+        border-radius: 20px 20px 20px 20px;
+
+        background-color: red;
+        display: flex;
+        flex-direction: row ;
+
+
+        &__logo{
+                display: flex;
+
+                justify-content: center ;
+            }
+            a{
+                justify-content: center;        
+
+            }
+
+        }
 
 
 

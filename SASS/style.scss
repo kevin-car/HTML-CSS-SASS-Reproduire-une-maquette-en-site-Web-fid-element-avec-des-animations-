@@ -6,8 +6,9 @@
 // utils        VARIABLES, FONCTIONS, MIXINS 
 @import "./utils/variables.scss";
 @import "./utils/AnimationsArriveeDesPlats.scss";
-@import "./utils/responsiveAccueil.scss";
 @import "./utils/responsive4Restaurants.scss";
+@import "./utils/responsiveAccueil+1100px.scss";
+@import "./utils/responsiveAccueil+750px-1100px.scss";
 @import "./utils/keyframesAnimationCaseCoche.scss";
 @import "./utils/effetCoeurViolet.scss";
 
