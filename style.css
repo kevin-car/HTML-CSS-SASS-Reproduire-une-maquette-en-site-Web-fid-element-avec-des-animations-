@@ -144,25 +144,26 @@ h5 {
 }
 
 @media (min-width: 750px) {
-  .site4Restaurant {
+  .blocCarte {
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    padding-left: 20%;
   }
-
   .blocCarte__titreRestau {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row !important;
+    justify-content: center !important;
     align-content: center;
   }
   .blocCarte__titreRestau--intitule {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 60% !important;
   }
   .blocCarte__titreRestau--logoFavoris {
-    display: none;
+    width: 20% !important;
   }
 
   .blocMenu {
@@ -172,15 +173,19 @@ h5 {
     justify-content: center;
   }
   .blocMenu__blocPlat {
-    width: 80%;
-    max-width: 500px;
+    width: 60%;
+  }
+  .blocMenu__blocPlat--prix {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .blocMenu__blocPlat--prix h3 {
+    font-size: 2em !important;
+    text-align: center;
   }
 
   .footerRestaurant {
     padding-left: 0 !important;
-    width: 50% !important;
-    min-width: 200px;
-    margin-left: 25%;
     border-radius: 20px 20px 20px 20px;
     background-color: red;
     display: flex;
@@ -194,13 +199,11 @@ h5 {
     justify-content: center;
   }
 }
-@media all and (min-width: 1100px) {
+@media all and (min-width: 750px) {
   .sitePagedAccueil {
-    padding-left: 5%;
-    padding-right: 5%;
-    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .bordureHaute {
@@ -211,39 +214,50 @@ h5 {
     border-radius: 15px;
     background-color: red;
     box-shadow: 6px 5px 5px #a7adbf;
-    width: 30%;
+    width: 80%;
     border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blocAccueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .accueil {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 30%;
+    width: 80%;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 6px 5px 5px #a7adbf;
-    height: 200px !important;
+    height: 250px !important;
   }
 
   .fonctionnement {
-    margin-top: 0px !important;
     display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px !important;
-    margin-bottom: 0 !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     text-align: center;
-    height: 200px !important;
-    width: 90%;
+    width: 60%;
+    height: 300px !important;
   }
   .fonctionnement__titre {
     display: none;
   }
   .fonctionnement__cadre {
     position: static;
-    min-width: 30%;
-    max-width: 30%;
+    min-width: 40%;
+    max-width: 40%;
     min-height: 25px;
     max-height: 60px;
   }
@@ -264,7 +278,7 @@ h5 {
     width: 100%;
   }
   .blocRestaurants__vignetteRestaurant {
-    border: #a7adbf 1px solid;
+    border: #eaeaea 1px solid;
     box-shadow: 10px 5px 5px #a7adbf;
     max-width: 25%;
   }
@@ -273,103 +287,8 @@ h5 {
   }
 
   .footer {
-    padding-left: 0 !important;
-    width: 30%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__logo {
-    display: flex;
-    justify-content: center;
-  }
-  .footer a {
-    justify-content: center;
-  }
-}
-@media all and (min-width: 750px) and (max-width: 1100px) {
-  .sitePagedAccueil {
-    padding-left: 5%;
-    padding-right: 5%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bordureHaute {
-    display: none;
-  }
-
-  .gps {
-    border-radius: 15px;
-    background-color: red;
-    box-shadow: 6px 5px 5px #a7adbf;
-    width: 50%;
-    border-radius: 20px 20px 0px 0px;
-  }
-
-  .accueil {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 6px 5px 5px #a7adbf;
-    height: 200px !important;
-  }
-
-  .fonctionnement {
-    margin-top: 0px !important;
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 20px !important;
-    margin-bottom: 0 !important;
-    text-align: center;
-    height: 200px !important;
-    width: 90%;
-  }
-  .fonctionnement__titre {
-    display: none;
-  }
-  .fonctionnement__cadre {
-    position: static;
-    min-width: 30%;
-    max-width: 30%;
-    min-height: 25px;
-    max-height: 60px;
-  }
-
-  .titreRestaurant {
-    display: none;
-  }
-
-  .effetAnimation {
-    display: none;
-  }
-
-  .blocRestaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
-  }
-  .blocRestaurants__vignetteRestaurant {
-    border: #a7adbf 1px solid;
-    box-shadow: 10px 5px 5px #a7adbf;
-    max-width: 45%;
-  }
-  .blocRestaurants__vignetteRestaurant__blocTitre {
-    height: 60px !important;
-  }
-
-  .footer {
     padding-left: 0 !important;
-    width: 40%;
-    min-width: 200px;
     border-radius: 20px 20px 20px 20px;
     background-color: red;
     display: flex;
@@ -389,7 +308,7 @@ h5 {
 }
 .blocMenu__blocPlat .blocMenu__blocPlat--prix {
   width: 20%;
-  transition: width 0.4s;
+  transition: width 0.8s;
 }
 .blocMenu__blocPlat:hover .blocMenu__blocPlat--plat {
   overflow: hidden;
@@ -432,7 +351,7 @@ h5 {
 }
 @keyframes logoTourne {
   0% {
-    transform: rotate(0turn);
+    transform: rotate(0.5turn);
   }
   100% {
     transform: rotate(1turn);
@@ -519,7 +438,7 @@ h5 {
 .bordureHaute {
   height: 5px;
   width: 100%;
-  background: linear-gradient(#d2d2d2, #a7adbf);
+  background: linear-gradient(#d2d2d2, #eaeaea);
 }
 
 .gps {
@@ -527,7 +446,7 @@ h5 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #a7adbf;
+  background-color: #eaeaea;
 }
 .gps p {
   font-family: "Roboto", sans serif;
@@ -539,7 +458,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #e2e3e7;
+  background-color: #f6f6f6;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -577,7 +496,7 @@ h5 {
   width: 180px;
   height: 40px;
   border-style: none;
-  box-shadow: 0px 5px 5px #a7adbf;
+  box-shadow: 0px 5px 5px #eaeaea;
 }
 
 .fonctionnement {
@@ -591,7 +510,7 @@ h5 {
   margin-right: 15px;
 }
 .fonctionnement__cadre {
-  background-color: #e2e3e7;
+  background-color: #f6f6f6;
   display: flex;
   align-items: center;
   width: 100%;
@@ -627,7 +546,7 @@ h5 {
 }
 
 .titreRestaurant {
-  background-color: #e2e3e7;
+  background-color: #f6f6f6;
   padding-bottom: 5px;
   padding-top: 30px;
   padding-left: 5%;
@@ -717,7 +636,7 @@ h5 {
 }
 @media (max-width: 750px) {
   .blocRestaurants {
-    background-color: #e2e3e7;
+    background-color: #f6f6f6;
     flex-direction: column;
   }
 }
@@ -774,12 +693,12 @@ h5 {
   height: max-content;
   height: auto;
   width: 100%;
-  background-color: #e2e3e7;
+  background-color: #f6f6f6;
   margin-top: -80px;
   border-radius: 50px 50px 0px 0px;
 }
 .blocCarte__anim {
-  background-color: #e2e3e7;
+  background-color: #f6f6f6;
   width: 100%;
   z-index: 1;
   bottom: 0;
@@ -798,15 +717,26 @@ h5 {
 }
 .blocCarte__titreRestau--logoFavoris {
   width: 20%;
-  height: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 .blocCarte__titreRestau--logoFavoris i {
   display: flex;
   justify-content: center;
-  height: 20px;
-  width: 100%;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+}
+.blocCarte__titreRestau--logoFavoris i:hover {
+  animation: coeur 400ms linear both;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
-  color: #6b6767;
 }
 
 .blocMenu h5 {
@@ -834,7 +764,7 @@ h5 {
   margin-top: 15px;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 5px 5px 5px #a7adbf;
+  box-shadow: 5px 5px 5px #eaeaea;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -863,6 +793,7 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: right;
 }
 .blocMenu__blocPlat--prix p {
   font-weight: bold;
@@ -904,7 +835,7 @@ h5 {
   border-radius: 50px;
   height: 40px;
   border-style: none;
-  box-shadow: 0px 5px 5px #a7adbf;
+  box-shadow: 0px 5px 5px #eaeaea;
   width: 60%;
   font-size: 20px;
   padding-top: 40px;

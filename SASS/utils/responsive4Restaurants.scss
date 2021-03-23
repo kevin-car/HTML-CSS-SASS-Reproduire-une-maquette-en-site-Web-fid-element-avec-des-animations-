@@ -1,35 +1,41 @@
 @media (min-width: 750px){
 
-    .site4Restaurant{
-        width: 80%;
-        padding-left: 20%;
-    }
 
+// LE BLOC D'ENTETE
 
     .blocCarte{
+
+        display: flex;
+        flex-direction: column;
+        width: 80%;
 
         &__titreRestau{
 
 
-            width: 100%;
+            width: 100% ;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row !important;
+            justify-content: center !important;
             align-content: center;
+
+
 
             &--intitule{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                width: 60% !important;
+
             }
 
             &--logoFavoris{
-                display: none;
-
+                width: 20% !important;
             }
 
     }
     }
+
+    //  LE MENU 
 
     .blocMenu{
         display: flex;
@@ -39,19 +45,27 @@
 
 
         &__blocPlat{
-            width: 80%;
-            max-width: 500px;
+            width: 60%;
+            &--prix{
+                display: flex !important;
+                align-items: center !important;
+                h3{
+                    font-size: 2.0em !important;
+                    text-align: center;
+                }
+            }
         }
     }
+
+
+    //  LE FOOTER 
+
 
     .footerRestaurant{
         
         
 
         padding-left: 0 !important;
-        width:50% !important;
-        min-width: 200px;
-        margin-left: 25%;
 
 
         border-radius: 20px 20px 20px 20px;
@@ -63,7 +77,6 @@
 
         &__logo{
                 display: flex;
-
                 justify-content: center ;
             }
             a{

@@ -8,7 +8,7 @@
 
         .blocMenu__blocPlat--prix{
             width: 20%;
-            transition: width 0.4s;
+            transition: width 0.8s;
         }
 
 // avec l'effet quand la souris surpasse la zone 
@@ -63,7 +63,7 @@
 
 @keyframes logoTourne{
     0%{
-        transform: rotate(0turn);
+        transform: rotate(0.5turn);
    }
 
     100%{
