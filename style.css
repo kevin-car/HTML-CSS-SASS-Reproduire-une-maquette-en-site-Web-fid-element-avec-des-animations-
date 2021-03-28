@@ -55,91 +55,91 @@ h5 {
 .anim1 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 0.2s;
+  animation-delay: 0.25s;
   position: relative;
 }
 
 .anim2 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
   position: relative;
 }
 
 .anim3 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 0.6s;
+  animation-delay: 0.75s;
   position: relative;
 }
 
 .anim4 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 0.8s;
+  animation-delay: 1s;
   position: relative;
 }
 
 .anim5 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 1s;
+  animation-delay: 1.25s;
   position: relative;
 }
 
 .anim6 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
   position: relative;
 }
 
 .anim7 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 1.4s;
+  animation-delay: 1.75s;
   position: relative;
 }
 
 .anim8 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 1.6s;
+  animation-delay: 2s;
   position: relative;
 }
 
 .anim9 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 1.8s;
+  animation-delay: 2.25s;
   position: relative;
 }
 
 .anim10 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
   position: relative;
 }
 
 .anim11 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 2.2s;
+  animation-delay: 2.75s;
   position: relative;
 }
 
 .anim12 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 2.4s;
+  animation-delay: 3s;
   position: relative;
 }
 
 .anim13 {
   opacity: 0;
   animation: animationProgressive ease-in-out 0.7s both;
-  animation-delay: 2.6s;
+  animation-delay: 3.25s;
   position: relative;
 }
 
@@ -180,7 +180,7 @@ h5 {
     align-items: center !important;
   }
   .blocMenu__blocPlat--prix h3 {
-    font-size: 2em !important;
+    font-size: 1.2em !important;
     text-align: center;
   }
 
@@ -256,8 +256,8 @@ h5 {
   }
   .fonctionnement__cadre {
     position: static;
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 45%;
+    max-width: 400px;
     min-height: 25px;
     max-height: 60px;
   }
@@ -303,25 +303,30 @@ h5 {
   }
 }
 .blocMenu__blocPlat .blocMenu__blocPlat--plat {
-  width: 75%;
-  transition: width 0.4s;
+  width: 80%;
+  transition: width 0.7s;
 }
 .blocMenu__blocPlat .blocMenu__blocPlat--prix {
   width: 20%;
-  transition: width 0.8s;
+  transition: width 1s;
 }
 .blocMenu__blocPlat:hover .blocMenu__blocPlat--plat {
   overflow: hidden;
   width: 65%;
 }
 .blocMenu__blocPlat:hover .blocMenu__blocPlat--prix {
-  transition: width 0.5s;
+  transition: width 0.7s;
   text-align: left;
   overflow: hidden;
   width: 15%;
+  margin-right: 0;
+}
+.blocMenu__blocPlat:hover .blocMenu__blocPlat--prix h3 {
+  margin: 0 !important;
+  text-align: center;
 }
 .blocMenu__blocPlat:hover .blocMenu__blocPlat--caseCoche {
-  transition: width 0.5s;
+  transition: width 0.7s;
   width: 20%;
   display: flex;
   flex-direction: row;
@@ -590,7 +595,8 @@ h5 {
   padding-left: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 90%;
+  width: 89%;
+  padding-right: 5%;
 }
 .blocRestaurants__vignetteRestaurant__blocTitre--titre h3, .blocRestaurants__vignetteRestaurant__blocTitre--titre p {
   margin: 0;

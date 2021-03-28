@@ -14,7 +14,7 @@
     .anim#{$i}{
         opacity: 0;
         animation: animationProgressive ease-in-out 0.7s both;
-        animation-delay: #{$i/5}s;
+        animation-delay: #{$i/4}s;
         position: relative;
     }
 }
