@@ -1,163 +1,113 @@
-@media all and (min-width:750px){
-
-
-    //  Paramètre Génraux 
-    .sitePagedAccueil{
-
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-
-    }
-    
-  
-    
-    // bloc GPS avec la bordure 
-    
-    .bordureHaute{
-        display: none;
-    }
-    
-
-    
-    // bloc message d'accueil
-
-    .gps{
-        border-radius: 15px;
-        background-color: red;
-        box-shadow: 6px 5px 5px #a7adbf;
-        width: 80%;
-        border-radius: 20px 20px 0px 0px ;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .blocAccueil{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-
-        margin-top: 50px;
-        margin-bottom: 50px;
-
-    }
-
-        .accueil{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 80%;
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 6px 5px 5px #a7adbf;
-        height: 250px  !important;
-    }
-    
-    //  Les blocs fonctionnement
-    .fonctionnement{
-
-    
-        display: flex;
-        align-items: center;    
-
-        margin-top: 50px !important;
-        margin-bottom: 50px !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    
-        text-align: center;
-        width: 60%;
-        height: 300px !important;
-
-
-    
-
-        &__titre{
-    
-    // J'ai masqué le bloc titre, le paramétrage est disponible  si vous souhaitez le replacer,
-    // il suffit d'enlever les barres de commentaires
-    
-                                        // display: flex;
-                                        // justify-content: center;
-    
-                                        // background-color: $gris_fonce;
-                                        // border-radius: 20px;
-    
-                                        // margin-bottom: 20px;
-                                        // margin-right: 25%;
-                                        // margin-left: 25%;
-                                        
-                                        // width:50%;
-                                        // box-shadow: 10px 5px 5px $gris_clair;
-                                        // h1{
-    
-                                        //     text-align: center;            
-                                        // }
-    
-    
-                                         display: none;
-    
-        }
-    
-        &__cadre{
-            position: static;
-    
-            min-width: 45%;        
-            max-width: 400px;
-            min-height: 25px;   
-            max-height: 60px;  
-         }
-    }
-    
-    // Le titre bloc fonctionnement
-    .titreRestaurant{
-        display: none;
-    }
-    
-    
-    .effetAnimation{
-        display: none;
-    }
-    
-
-    .blocRestaurants{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        &__vignetteRestaurant{
-            border: $gris_fonce 1px solid;
-            box-shadow: 10px 5px 5px #a7adbf;
-            max-width: 24%;
-            &__blocTitre{
-                height: 60px !important;
-            }
-        }
-    }   
-    
-    
-    .footer{
-        width: 100%;
-        padding-left: 0 !important;
-    
-        border-radius: 20px 20px 20px 20px;
-    
-        background-color: red;
-        display: flex;
-        flex-direction: column ;
-        &__logo{
-            display: flex;
-    
-            justify-content: center;
-        }
-        a{
-            justify-content: center;        
-    
-        }
-    
-    }
-    
-    
-    }
+@media all and (min-width:750px) {
+	//  Paramètre Génraux 
+	.sitePagedAccueil {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	// bloc GPS avec la bordure 
+	.bordureHaute {
+		display: none;
+	}
+	// bloc message d'accueil
+	.gps {
+		border-radius: 15px;
+		background-color: red;
+		box-shadow: 6px 5px 5px #a7adbf;
+		width: 80%;
+		border-radius: 20px 20px 0px 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	.blocAccueil {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 40%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.accueil {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 80%;
+		border-radius: 0px 0px 20px 20px;
+		box-shadow: 6px 5px 5px #a7adbf;
+		height: 250px !important;
+	}
+	//  Les blocs fonctionnement
+	.fonctionnement {
+		display: flex;
+		align-items: center;
+		margin-top: 50px !important;
+		margin-bottom: 50px !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		text-align: center;
+		width: 60%;
+		height: 300px !important;
+		&__titre {
+			// J'ai masqué le bloc titre, le paramétrage est disponible  si vous souhaitez le replacer,
+			// il suffit d'enlever les barres de commentaires
+			// display: flex;
+			// justify-content: center;
+			// background-color: $gris_fonce;
+			// border-radius: 20px;
+			// margin-bottom: 20px;
+			// margin-right: 25%;
+			// margin-left: 25%;
+			// width:50%;
+			// box-shadow: 10px 5px 5px $gris_clair;
+			// h1{
+			//     text-align: center;            
+			// }
+			display: none;
+		}
+		&__cadre {
+			position: static;
+			min-width: 45%;
+			max-width: 400px;
+			min-height: 25px;
+			max-height: 60px;
+		}
+	}
+	// Le titre bloc fonctionnement
+	.titreRestaurant {
+		display: none;
+	}
+	.effetAnimation {
+		display: none;
+	}
+	.blocRestaurants {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+		&__vignetteRestaurant {
+			border: $gris_fonce 1px solid;
+			box-shadow: 10px 5px 5px #a7adbf;
+			max-width: 24%;
+			&__blocTitre {
+				height: 60px !important;
+			}
+		}
+	}
+	.footer {
+		width: 100%;
+		padding-left: 0 !important;
+		border-radius: 20px 20px 20px 20px;
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		&__logo {
+			display: flex;
+			justify-content: center;
+		}
+		a {
+			justify-content: center;
+		}
+	}
+}

@@ -1,53 +1,49 @@
-
-
 // Paramètres généraux
-
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+	text-decoration: none;
+	color: black;
 }
 
 // organisation pour tout le site 
-
-body{
-    margin: 0;
-    padding: 0;
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 
-.site{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 50;
+.site {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 50;
 }
 
 // réservez le menu qui vous convient
-h1{
-    font-family: "Roboto", serif;
-    font-size: 25px;
-    font-weight: 900;
+h1 {
+	font-family: "Roboto", serif;
+	font-size: 25px;
+	font-weight: 900;
 }
 
 // les noms des restaurant 
-h2{
-    font-family: 'Shrikhand', "Parisienne";    
-    font-size: 30px;
+h2 {
+	font-family: 'Shrikhand', "Parisienne";
+	font-size: 30px;
 }
 
 // les noms des plats
-h3{
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
+h3 {
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
 }
 
-h5{
-    font-size: 21px;
-    opacity: 0.60;
-    margin-top: 0;
-    margin-bottom:0;
+h5 {
+	font-size: 21px;
+	opacity: 0.60;
+	margin-top: 0;
+	margin-bottom: 0;
 }
-

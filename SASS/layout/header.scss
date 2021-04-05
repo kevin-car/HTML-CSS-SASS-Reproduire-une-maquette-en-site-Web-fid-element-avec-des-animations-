@@ -1,17 +1,17 @@
 @mixin logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    img{
-        width: 200px;
-    }
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	img {
+		width: 200px;
+	}
 }
 
 @mixin boutonPrecedent {
-    position: absolute;
-    left: 20px;
-    top: 15px;
+	position: absolute;
+	left: 20px;
+	top: 15px;
 }
