@@ -200,7 +200,7 @@ h5 {
     justify-content: center;
   }
 }
-@media all and (min-width: 750px) {
+@media all and (min-width: 768px) {
   .sitePagedAccueil {
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +226,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -244,13 +244,14 @@ h5 {
   .fonctionnement {
     display: flex;
     align-items: center;
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    flex-direction: row !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     text-align: center;
     width: 60%;
-    height: 300px !important;
+    height: 200px !important;
   }
   .fonctionnement__titre {
     display: none;
@@ -258,9 +259,11 @@ h5 {
   .fonctionnement__cadre {
     position: static;
     min-width: 45%;
-    max-width: 400px;
+    max-width: 200px;
     min-height: 25px;
     max-height: 60px;
+    margin-right: 1%;
+    margin-left: 1%;
   }
 
   .titreRestaurant {
@@ -281,7 +284,7 @@ h5 {
   .blocRestaurants__vignetteRestaurant {
     border: #eaeaea 1px solid;
     box-shadow: 10px 5px 5px #a7adbf;
-    max-width: 24%;
+    max-width: 48%;
   }
   .blocRestaurants__vignetteRestaurant__blocTitre {
     height: 60px !important;
@@ -301,6 +304,28 @@ h5 {
   }
   .footer a {
     justify-content: center;
+  }
+}
+@media (min-width: 1299px) {
+  .blocAccueil {
+    width: 40%;
+  }
+
+  .fonctionnement {
+    flex-direction: column !important;
+    height: 300px !important;
+    margin-top: 50px !important;
+  }
+  .fonctionnement__cadre {
+    position: static;
+    min-width: 22%;
+    max-width: 400px;
+    min-height: 25px;
+    max-height: 60px;
+  }
+
+  .blocRestaurants__vignetteRestaurant {
+    max-width: 23%;
   }
 }
 .blocMenu__blocPlat .blocMenu__blocPlat--plat {

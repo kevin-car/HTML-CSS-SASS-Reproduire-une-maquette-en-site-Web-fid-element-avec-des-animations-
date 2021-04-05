@@ -1,0 +1,25 @@
+@media (min-width:1299px) {
+	.blocAccueil {
+        width: 40%;
+}
+.fonctionnement {
+    flex-direction: column !important;
+    height: 300px !important;
+    margin-top: 50px !important;
+    &__cadre {
+        position: static;
+        min-width: 22%;
+        max-width: 400px;
+        min-height: 25px;
+        max-height: 60px;
+    }
+}
+
+	// Les blocs Restaurants
+	.blocRestaurants {
+		&__vignetteRestaurant {
+			max-width: 23%;
+		}
+	}
+
+}
